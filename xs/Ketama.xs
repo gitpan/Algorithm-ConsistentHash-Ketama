@@ -8,7 +8,7 @@
 
     All the rest are by Daisuke Maki.
     Portions of the code made by Daisuke Maki are licensed under
-    Artistic License v2 (which includes the Perl portion).
+    Artistic License v2 (which includes the pure-Perl contents).
 
     You should also note that MD5 code is based on another person's code,
     too. However, that file does not carry a GPL license
@@ -113,6 +113,7 @@ PerlKetama_remove_bucket(PerlKetama *p, char *server)
             }
             p->numbuckets--;
             Renew(p->buckets, p->numbuckets, PerlKetama_Bucket);
+            i = p->numbuckets;
         }
     }
 
