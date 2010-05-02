@@ -1,11 +1,13 @@
 ---
-abstract: ~
+abstract: 'Ketama Consistent Hashing for Perl (XS)'
 author:
-  - 'Christian Muehlhaeuser c<< <chris@last.fm> >>'
+  - 'Christian Muehlhaeuser C<< <chris@last.fm> >>'
 build_requires:
   Devel::PPPort: 3.19
   ExtUtils::MakeMaker: 6.42
   ExtUtils::ParseXS: 2.21
+  Test::More: 0
+  Test::Requires: 0
 configure_requires:
   Devel::PPPort: 3.19
   ExtUtils::MakeMaker: 6.42
@@ -24,4 +26,4 @@ requires:
   XSLoader: 0.1
 resources:
   license: http://opensource.org/licenses/artistic-license.php
-version: 0.00001
+version: 0.00001_01

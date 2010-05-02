@@ -42,7 +42,7 @@ PerlKetama_md5_digest( char* in, unsigned char md5pword[16] )
     md5_state_t md5state;
 
     md5_init( &md5state );
-    md5_append( &md5state, in, strlen( in ) );
+    md5_append( &md5state, (unsigned char *) in, strlen( in ) );
     md5_finish( &md5state, md5pword );
 }
 
@@ -109,7 +109,7 @@ PerlKetama_remove_bucket(PerlKetama *p, char *server)
     for( i = 0; i < p->numbuckets; i++ ) {
         if ( strEQ(p->buckets[i].label, server) ) {
             for( i += 1; i < p->numbuckets; i++) {
-                Copy(&(p->buckets[i]), &(p->buckets[i - 1]), 1, PerlKetama_Bucket);
+                StructCopy(&(p->buckets[i]), &(p->buckets[i - 1]), PerlKetama_Bucket);
             }
             p->numbuckets--;
             Renew(p->buckets, p->numbuckets, PerlKetama_Bucket);
@@ -172,7 +172,7 @@ PerlKetama_create_continuum( PerlKetama *ketama )
     unsigned int i, k, h;
     char ss[MAX_SS_BUF];
     unsigned char digest[16];
-    int continuum_idx = 0;
+    unsigned int continuum_idx = 0;
     PerlKetama_Continuum_Point continuum[ ketama->numbuckets * 160 ];
 
     for ( i = 0; i < ketama->numbuckets; i++ ) {
