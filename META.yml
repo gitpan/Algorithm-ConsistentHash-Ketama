@@ -26,4 +26,4 @@ requires:
   XSLoader: 0.1
 resources:
   license: http://opensource.org/licenses/artistic-license.php
-version: 0.00001_02
+version: 0.00001_03
