@@ -22,8 +22,9 @@ no_index:
   directory:
     - inc
     - t
+    - xt
 requires:
   XSLoader: 0.1
 resources:
   license: http://opensource.org/licenses/artistic-license.php
-version: 0.00001_03
+version: 0.00002
