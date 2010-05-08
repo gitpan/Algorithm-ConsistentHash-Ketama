@@ -27,4 +27,5 @@ requires:
   XSLoader: 0.1
 resources:
   license: http://opensource.org/licenses/artistic-license.php
-version: 0.00004
+  repository: git://github.com/lestrrat/Algorithm-ConsistentHash-Ketama.git
+version: 0.00005
