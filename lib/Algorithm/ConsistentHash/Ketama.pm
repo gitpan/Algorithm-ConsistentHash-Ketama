@@ -5,7 +5,7 @@ use XSLoader;
 our $VERSION;
 
 BEGIN {
-    $VERSION = '0.00005';
+    $VERSION = '0.00006';
     XSLoader::load( __PACKAGE__, $VERSION );
 }
 
@@ -50,6 +50,10 @@ hash a string.
 =head2 new
 
 Creates a new instance of Algorithm::ConsistentHash::Ketama
+
+=head2 clone
+
+Clones the current object.
 
 =head2 add_bucket( $key, $weight )
 
