@@ -13,7 +13,7 @@ configure_requires:
   ExtUtils::ParseXS: 2.21
 distribution_type: module
 dynamic_config: 1
-generated_by: 'Module::Install version 1.04'
+generated_by: 'Module::Install version 1.06'
 license: artistic
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -29,4 +29,4 @@ requires:
 resources:
   license: http://opensource.org/licenses/artistic-license.php
   repository: git://github.com/lestrrat/Algorithm-ConsistentHash-Ketama.git
-version: 0.00008
+version: 0.00009
