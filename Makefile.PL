@@ -2,7 +2,9 @@ use inc::Module::Install;
 
 name 'Algorithm-ConsistentHash-Ketama';
 all_from 'lib/Algorithm/ConsistentHash/Ketama.pm';
-auto_set_repository;
+repository "git://github.com/lestrrat/Algorithm-ConsistentHash-Ketama.git";
+homepage "https://github.com/lestrrat/Algorithm-ConsistentHash-Ketama";
+bugtracker "https://github.com/lestrrat/Algorithm-ConsistentHash-Ketama/issues";
 
 if (! cc_available()) {
     warn "no compiler available";

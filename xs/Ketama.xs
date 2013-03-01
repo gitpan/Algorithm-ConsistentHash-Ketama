@@ -188,7 +188,7 @@ PerlKetama_buckets(PerlKetama *p)
             FREETMPS;
             LEAVE;
         }
-        XPUSHs( sv );
+        mXPUSHs( sv );
     }
     return p->numbuckets;
 }

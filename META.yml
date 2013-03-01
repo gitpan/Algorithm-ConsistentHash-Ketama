@@ -27,6 +27,8 @@ no_index:
 requires:
   XSLoader: 0.02
 resources:
+  bugtracker: https://github.com/lestrrat/Algorithm-ConsistentHash-Ketama/issues
+  homepage: https://github.com/lestrrat/Algorithm-ConsistentHash-Ketama
   license: http://opensource.org/licenses/artistic-license.php
   repository: git://github.com/lestrrat/Algorithm-ConsistentHash-Ketama.git
-version: 0.00009
+version: 0.00010
